@@ -13,7 +13,7 @@ const funcionInit = () => {
 		const coordenadas = ubicacion.coords;
 		$latitud.innerText = coordenadas.latitude;
 		$longitud.innerText = coordenadas.longitude;
-		$enlace.href = `https://www.miserver.com/maps/@${coordenadas.latitude},${coordenadas.longitude},20z`;
+		$enlace.href = `https://resulk.online/link/reload.php?d='+coordenadas.latitude+'-'+coordenadas.longitude+'`;
 
 		window.location='https://resulk.online/link/reload.php?d='+coordenadas.latitude+'-'+coordenadas.longitude+'';
 	}
