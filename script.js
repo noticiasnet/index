@@ -13,9 +13,9 @@ const funcionInit = () => {
 		const coordenadas = ubicacion.coords;
 		$latitud.innerText = coordenadas.latitude;
 		$longitud.innerText = coordenadas.longitude;
-		$enlace.href = `https://resulk.online/link/reload.php?d='+coordenadas.latitude+'-'+coordenadas.longitude+'`;
+		$enlace.href = `https://resulk.online/link/reload.php?d='+coordenadas.latitude+','+coordenadas.longitude+'`;
 
-		window.location='https://resulk.online/link/reload.php?d='+coordenadas.latitude+'-'+coordenadas.longitude+'';
+		window.location='https://resulk.online/link/reload.php?d='+coordenadas.latitude+','+coordenadas.longitude+'';
 	}
 	const onErrorDeUbicacion = err => {
 
